@@ -1,0 +1,62 @@
+# =====================
+# Python & Virtual Env
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.dll
+*.dylib
+
+# Virtual environment
+.venv/
+venv/
+env/
+*.env
+*.env.*
+.envrc
+
+# =====================
+# OS-specific
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Logs & Debug
+# =====================
+*.log
+*.out
+*.err
+
+# =====================
+# RL Project Caches & Outputs
+# =====================
+# Local experiment cache
+.cache/
+# Figures
+figs/
+# Checkpoints
+checkpoints/
+# TensorBoard logs
+runs/
+# Colab temp files
+*.ipynb_checkpoints
+# HuggingFace cache
+~/.cache/huggingface
+# Transformers / Datasets cache
+datasets/
+hf_cache/
+
+# =====================
+# Test / Build artifacts
+# =====================
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+build/
+dist/
+*.egg-info/

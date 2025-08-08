@@ -1,0 +1,21 @@
+paths:
+  work_dir: .cache           # 临时输出目录
+  dataset_json: data/hotpot_train_v1.1.json
+
+data:
+  sample: 50                 # 为了快，先采样 50 条
+  cache_dir: ${paths.work_dir}/prep
+
+retrieval:
+  top_k: 5
+
+# model:
+#   name: sshleifer/tiny-gpt2
+#   device: cpu
+#   max_new_tokens: 64
+
+
+model:
+  name: google/flan-t5-small   # ✅ 指令微调过的seq2seq
+  device: mps                  # 或 mps（Apple 芯片），cuda（NVIDIA）
+  max_new_tokens: 64
